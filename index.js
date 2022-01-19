@@ -1,0 +1,12 @@
+$(document).ready(function(){
+$("button").click(function(){
+    $("h1").css("color","yellow");
+    $("h1").animate({opacity:1});
+})
+});
+$("input").keydown(function(event){
+    $("h1").text(event.key)
+})
+$("h1").on("click",function(){
+    $("h1").animate({opacity:0.1});
+})
